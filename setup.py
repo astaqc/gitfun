@@ -4,7 +4,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = fh.read()
 setup(
     name = 'gitfun',
-    version = '0.0.112',
+    version = '0.0.113',
     author = 'Shreeda Bhat',
     author_email = 'shreeda@astaqc.com',
     url = "https://github.com/memetics19/gitfun.git",
@@ -20,6 +20,6 @@ setup(
     ],
     entry_points = '''
         [console_scripts]
-        gitfun=cli_main:cli
+        fun=cli_main:cli
     '''
 )
