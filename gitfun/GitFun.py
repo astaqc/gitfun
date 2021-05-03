@@ -17,7 +17,7 @@ def init_push(url:str) -> str:
     subprocess.getoutput("git init")
     subprocess.getoutput("git remote add origin {0}").format(url)
     subprocess.getoutput("git add .")
-    subprocess.getoutput("git commit -m %s")%(commit_message)
+    subprocess.getoutput("git commit -m {0}").format(commit_message)
     return subprocess.getoutput("git push --set-upstream origin master ")
 
 
