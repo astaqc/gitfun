@@ -30,7 +30,7 @@ Pre-requisites:
 
 # Usage
 
-For initial push to the remote remote 
+For initial push to the remote Repository  
 
 
 ``fun initpush -url <link_of_the_github_repo> ``
