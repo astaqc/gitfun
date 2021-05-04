@@ -36,7 +36,7 @@ For initial push to the remote Repository
 ``fun initpush -url <link_of_the_github_repo> ``
 
 # Development
-[(Back to top)](#table-of-contents)
+
 
 for development setup 
 
