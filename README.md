@@ -17,7 +17,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
     - [Sponsor](#sponsor)
     - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
 - [License](#license)
-- [Footer](#footer)
+
 
 # Installation
 It's  simple step to install
