@@ -1,24 +1,15 @@
 from setuptools import setup, find_packages
 
-from os import path
-this_directory = path.abspath(path.dirname(__file__))
-with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
-    long_description = f.read()
-
-
 with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = fh.read()
-
 setup(
     name = 'gitfun',
-    version = '0.0.8.3',
+    version = '0.0.7',
     author = 'Shreeda Bhat',
     author_email = 'shreeda@astaqc.com',
     url = "https://github.com/memetics19/gitfun.git",
-    long_description=long_description,
-    long_description_content_type='text/markdown',
     license = 'MIT',
-    description = 'Make Git simplified for lazy developers 😃',
+    description = 'A fun git is a package which is for lazy developers',
     py_modules = ['cli_main', 'gitfun'],
     packages = find_packages(),
     install_requires = [requirements],
