@@ -2,7 +2,7 @@ import subprocess
 
 
 
-def init_push(url:str) -> str:
+def init_push(url:str,m:str) -> str:
     """
 
     :param url:str, required
@@ -13,11 +13,16 @@ def init_push(url:str) -> str:
     """
 
 
-    commit_message = "initial Commit"
     subprocess.getoutput("git init")
     subprocess.getoutput("git remote add origin {0}").format(url)
     subprocess.getoutput("git add .")
-    subprocess.getoutput("git commit -m {0}").format(commit_message)
+    try:
+        if m == type(str):
+            subprocess.getoutput("git commit -m {0}").format(m)
+        else:
+            subprocess.getoutput("git commit -m initial commit")
+    except Exception as ex:
+        print(ex)
     return subprocess.getoutput("git push --set-upstream origin master ")
 
 
@@ -28,6 +33,5 @@ def init_push(url:str) -> str:
 
 
 
-def remote(url:str) -> str:
-    subprocess.run("git add remote origin",url)
-    return "remote add"
+def status():
+    return subprocess.getoutput("git status")

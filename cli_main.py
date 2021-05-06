@@ -10,6 +10,12 @@ def cli():
 
 @cli.command()
 @click.option('-url', type=str, help='Paste your link of the repo')
+@click.option('-m',type=str,help = "Commit message ")
 
-def initpush(url):
-    click.echo(gf.init_push(url))
+def initpush(url,m):
+    click.echo(gf.init_push(url,m))
+
+
+@cli.command()
+def status():
+    click.echo(gf.status())
