@@ -25,7 +25,7 @@ def init_push(url:str,m:str) -> str:
             print(subprocess.getoutput("git commit -m initial commit"))
     except Exception as ex:
         print(ex)
-    return subprocess.getoutput("git push  origin master ")
+    return subprocess.getoutput("git push --set-upstream origin master ")
 
 
 
