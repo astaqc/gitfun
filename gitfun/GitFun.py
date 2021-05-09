@@ -12,18 +12,20 @@ def init_push(url:str,m:str) -> str:
     which pushes all the changes to repo
     """
 
-
-    subprocess.getoutput("git init")
-    subprocess.getoutput("git remote add origin {0}").format(url)
-    subprocess.getoutput("git add .")
+    #
+    cmd_remote = "git remote add test19 {0}".format(url)
+    cmd_commit = "git commit -m {0}".format(m)
+    print(subprocess.getoutput("git init"))
+    subprocess.getoutput(cmd_remote)
+    print(subprocess.getoutput("git add ."))
     try:
-        if m == type(str):
-            subprocess.getoutput("git commit -m {0}").format(m)
+        if  m:
+            print(subprocess.getoutput("git commit -m {m}").format(m))
         else:
-            subprocess.getoutput("git commit -m initial commit")
+            print(subprocess.getoutput("git commit -m initial commit"))
     except Exception as ex:
         print(ex)
-    return subprocess.getoutput("git push --set-upstream origin master ")
+    return subprocess.getoutput("git push  test19 master ")
 
 
 
