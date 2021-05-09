@@ -19,10 +19,10 @@ def init_push(url:str,m:str) -> str:
     subprocess.getoutput(cmd_remote)
     print(subprocess.getoutput("git add ."))
     try:
-        if  m:
-            print(subprocess.getoutput("git commit -m {m}").format(m))
-        else:
-            print(subprocess.getoutput("git commit -m initial commit"))
+        if  m == type(str):
+            subprocess.getoutput(cmd_commit)
+        elif m != type(str):
+            subprocess.getoutput("git commit -m initial commit")
     except Exception as ex:
         print(ex)
     return subprocess.getoutput("git push --set-upstream origin master ")
