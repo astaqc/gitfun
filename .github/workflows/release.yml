@@ -2,8 +2,11 @@ name: Release
 
 on:
   push:
+    branches:
+      -master
     tags:
-    - master
+    - "*"
+
 
 jobs:
   build:
