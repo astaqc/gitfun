@@ -10,7 +10,6 @@ on:
 
 jobs:
   build:
-    if: github.repository == 'astaqc/gitfun'
     runs-on: ubuntu-latest
 
     steps:
