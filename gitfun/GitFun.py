@@ -31,12 +31,12 @@ def status():
     return subprocess.getoutput("git status")
 
 
-def push_branch(commit_message, remote_branch) -> str:
+def push_branch(commit_message, pull_branch, push_branch) -> str:
     try:
-        subprocess.getoutput("git pull origin {0}").format(remote_branch)
+        subprocess.getoutput("git pull origin {0}").format(pull_branch)
         subprocess.getoutput("git add .")
         subprocess.getoutput("git commit -m {0}").format(commit_message)
-        subprocess.getoutput("git push origin {0}").fomart(remote_branch)
+        subprocess.getoutput("git push origin {0}").fomart(push_branch)
 
     except Exception as ex:
         print(ex)
