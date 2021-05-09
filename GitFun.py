@@ -27,14 +27,11 @@ def init_push(url:str,m:str) -> str:
 
 
 
+
+
+
+
+
+
 def status():
     return subprocess.getoutput("git status")
-
-
-def commit_branch(commit_message,remote_branch) -> str:
-    subprocess.getoutput("git pull origin {0}").format(remote_branch)
-    subprocess.getoutput("git add .")
-    subprocess.getoutput("git commit -m {0}").format(commit_message)
-    subprocess.getoutput("git push origin {0}").fomart(remote_branch)
-
-
