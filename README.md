@@ -8,15 +8,14 @@ A Simplified Automated CLI tool for GIT, It's for Lazy Developers and  Newbies ð
 
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
-- [GitFun](#project-title)
-- [Table of contents](#table-of-contents)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Development](#development)
-- [Contribute](#contribute)
-    - [Sponsor](#sponsor)
-    - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
-- [License](#license)
+- [GitFun](#GitFun)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Development](#Development)
+- [Contribute](#Contribute)
+    - [Sponsor](#Sponsor)
+    - [Adding new features or fixing bugs](#)
+- [License](#License)
 
 
 # Installation
