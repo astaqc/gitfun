@@ -37,6 +37,7 @@ def status():
 
 def push_branch(cmd_commit,cmd_branch) -> str:
     try:
+        if
         subprocess.getoutput(cmd_branch)
         subprocess.getoutput("git add .")
         subprocess.getoutput(cmd_commit)
