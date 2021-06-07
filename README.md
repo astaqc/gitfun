@@ -32,7 +32,20 @@ Pre-requisites:
 For initial push to the remote Repository  
 
 
-``fun initpush -url <link_of_the_github_repo> ``
+``fun pushbranch -url <link_of_the_github_repo> -m commit message -b branch name``
+
+For checking the git status
+
+``fun status``
+
+For checking the remote
+
+``fun remote``
+
+For getting a pull from the branch 
+
+``fun pullbranch -url <link_of_the_github_repo>  -b branch name``
+
 
 # Development
 
