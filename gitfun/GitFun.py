@@ -51,3 +51,7 @@ def push_branch(cmd_remote: str,cmd_commit: str,cmd_branch: str) -> str:
 
     except Exception as ex:
         print(ex)
+
+
+def remote():
+    return subprocess.getoutput("git remote -v")
