@@ -27,7 +27,7 @@ def push_branch(cmd_remote: str,cmd_commit: str,cmd_branch: str) -> str:
             result = subprocess.getoutput("git push origin main")
         return  result
 
-    except Exception as ex:
+    except ValueError as ex:
         print(ex)
 
 
