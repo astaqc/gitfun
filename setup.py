@@ -15,7 +15,7 @@ setup(
     author_email = 'shreeda@astaqc.com',
     url = "https://github.com/memetics19/gitfun.git",
     license = 'MIT',
-    description = 'Make Git simplified for lazy developers 😃',
+    description = 'Make Git simplified for lazy developers ',
     long_description=long_description,
     long_description_content_type='text/markdown',
     py_modules = ['cli_main', 'gitfun'],
