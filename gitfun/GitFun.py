@@ -1,4 +1,5 @@
 import subprocess
+from github import Github
 
 
 def constants(url:str,m:str,b:str) -> str:
@@ -33,3 +34,10 @@ def push_branch(cmd_remote: str,cmd_commit: str,cmd_branch: str) -> str:
 
 def remote():
     return subprocess.getoutput("git remote -v")
+
+
+def push_private_repo(token):
+    g = Github(token)
+    return g
+
+
