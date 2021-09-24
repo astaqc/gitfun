@@ -23,6 +23,7 @@ def push_branch(cmd_remote: str,cmd_commit: str,cmd_branch: str) -> str:
             subprocess.getoutput(cmd_commit)
             result = subprocess.getoutput("git push origin {0}").fomart(push_branch)
         else:
+            subprocess.getoutput("git init")
             subprocess.getoutput("git add .")
             subprocess.getoutput("git commit -m initial_commit")
             result = subprocess.getoutput("git push origin main")
@@ -36,8 +37,9 @@ def remote():
     return subprocess.getoutput("git remote -v")
 
 
-def push_private_repo(token):
-    g = Github(token)
-    return g
-
-
+def push_private_repo(cmd_remote:str,token):
+    subprocess.getoutput("git init")
+    subprocess.getoutput(cmd_remote)
+    subprocess.getoutput("git commit -m initial commit")
+    result = subprocess.getoutput("git push origin main")
+    return result
