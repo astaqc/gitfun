@@ -13,20 +13,23 @@ def status():
     return subprocess.getoutput("git status")
 
 
-def push_branch(cmd_remote: str,cmd_commit: str,cmd_branch: str) -> str:
-    try:
-        if cmd_commit == str and cmd_branch == str:
-            subprocess.getoutput(cmd_branch)
-            subprocess.getoutput(cmd_remote)
+def push_branch(url,m,b) -> str:
+    try:    
+        if(b=="master" or b=="main" or  m=="initial commit"):
+            subprocess.getoutput('git checkout {0} ').format(b)      
+            subprocess.getoutput('git init')
             subprocess.getoutput("git add .")
-            subprocess.getoutput(cmd_commit)
-            result = subprocess.getoutput("git push origin {0}").fomart(push_branch)
+            subprocess.getoutput("git commit -m {0}").format(m)
+            result = subprocess.getoutput("git push origin {0}").format(b)
+            return  result
         else:
-            subprocess.getoutput(cmd_branch)
+            subprocess.getoutput('git checkout {0} ').format(b)      
+            subprocess.getoutput('git init')
             subprocess.getoutput("git add .")
-            subprocess.getoutput("git commit -m initial_commit")
-            result = subprocess.getoutput("git push origin main")
-        return  result
+            subprocess.getoutput("git commit -m {0}").format(m)
+            result = subprocess.getoutput("git push origin {0}").format(b)
+            return  result
+
 
     except ValueError as ex:
         print(ex)
