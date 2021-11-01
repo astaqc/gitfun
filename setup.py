@@ -10,7 +10,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name = 'gitfun',
-    version = '0.0.8.17',
+    version = '0.0.8.189',
     author = 'Shreeda Bhat',
     author_email = 'shreeda@astaqc.com',
     url = "https://github.com/memetics19/gitfun.git",

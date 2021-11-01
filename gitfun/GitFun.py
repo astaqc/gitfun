@@ -22,6 +22,7 @@ def push_branch(cmd_remote: str,cmd_commit: str,cmd_branch: str) -> str:
             subprocess.getoutput(cmd_commit)
             result = subprocess.getoutput("git push origin {0}").fomart(push_branch)
         else:
+            subprocess.getoutput(cmd_branch)
             subprocess.getoutput("git add .")
             subprocess.getoutput("git commit -m initial_commit")
             result = subprocess.getoutput("git push origin main")
