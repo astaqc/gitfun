@@ -26,3 +26,6 @@ def pushbranch(m,b,**url):
 @cli.command()
 def remote():
     click.echo(gf.remote())
+
+if __name__ == '__main__':
+    cli()
