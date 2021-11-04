@@ -1,8 +1,8 @@
 <!-- Add banner here -->
 
 # GitFun
-A Simplified Automated CLI tool for GIT, It's for Lazy Developers and  Newbies 😜
-![]<img src="https://media.giphy.com/media/muCo9BLS7vjErTON27/giphy.gif" width=40 height=40/>
+A Simplified Automated CLI tool for GIT, It's for Lazy Developers and  Newbies 😜<br>
+<img src="https://media.giphy.com/media/muCo9BLS7vjErTON27/giphy.gif" width=75 height=75/>
 # Table of contents
 <!-- After you have introduced your project, it is a good idea to add a **Table of contents** or **TOC** as **cool** people say it. This would make it easier for people to navigate through your README and find exactly what they are looking for.
 
