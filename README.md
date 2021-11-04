@@ -29,6 +29,7 @@ Pre-requisites:
 ``pip install gitfun``
 
 # Usage
+![Alt Text](https://media.giphy.com/media/7ePhnZptEdIT2Wp96Q/giphy.gif)
 
 For initial push to the remote Repository  
 
