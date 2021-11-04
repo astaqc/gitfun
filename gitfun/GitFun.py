@@ -1,4 +1,5 @@
 import subprocess
+from github import Github
 
 
 
@@ -30,10 +31,15 @@ def push_branch(m:str,b:str,**url:str) -> str:
             subprocess.getoutput(cmd_message)
             result = subprocess.getoutput(cmd_push)
             return  result
-
-
     except ValueError as ex:
         print(ex)
+
+
+
+
+def private_branch(m:str,b:str,**url:str) -> str:
+    t
+
 
 
 def remote():
