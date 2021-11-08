@@ -8,7 +8,7 @@ from os import path
 
 setup(
     name = 'gitfun',
-    version = '0.0.9.8',
+    version = '1.0.1',
     author = 'Shreeda Bhat',
     author_email = 'shreeda@astaqc.com',
     url = "https://github.com/memetics19/gitfun.git",

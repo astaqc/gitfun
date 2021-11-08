@@ -21,8 +21,8 @@ def status():
 @click.option('-m',type=str,help = "Commit message ")
 @click.option('-b',type=str, help ="Branch name for checkout")
 
-def pushbranch(m,b,url):
-    click.echo(gf.push_branch(m,b,url))
+def pushbranch(m,b,**url):
+    click.echo(gf.push_branch(m,b,**url))
 
 @cli.command()
 def remote():
