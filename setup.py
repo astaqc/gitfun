@@ -8,13 +8,12 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name = 'gitfun',
-    version = '0.0.9.2',
+    version = '0.0.9.8',
     author = 'Shreeda Bhat',
     author_email = 'shreeda@astaqc.com',
     url = "https://github.com/memetics19/gitfun.git",
     license = 'MIT',
     description = 'Make Git simplified for lazy developers ',
-    long_description=long_description,
     install_requires=[
     'bleach==3.3.0',
     'certifi==2020.12.5',
