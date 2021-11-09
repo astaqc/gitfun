@@ -1,5 +1,5 @@
 import subprocess
-from github import Github
+
 
 
 
@@ -15,7 +15,7 @@ def push_branch(m:str,b:str,**url:str) -> str:
         cmd_branch = "git checkout {} ".format(b)
         cmd_message = 'git commit -m "{}"'.format(m)
         cmd_push = "git push origin {}".format(b)
-        if(b=="master" and b=="main" or m=="initial commit"):
+        if(b=="master" and  b=="main" or m=="initial commit"):
             subprocess.getoutput('git init')
             subprocess.getoutput("git add .")  
             subprocess.getoutput(cmd_remote)

@@ -1,7 +1,4 @@
-import subprocess
-from github import Github
 import click
-import argparse
 from gitfun import GitFun as gf
 
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
