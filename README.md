@@ -32,6 +32,7 @@ Pre-requisites:
 
 # Usage
 ![Alt Text](https://media.giphy.com/media/7ePhnZptEdIT2Wp96Q/giphy.gif)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fastaqc%2Fgitfun.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fastaqc%2Fgitfun?ref=badge_shield)
 
 For initial push to the remote Repository  
 
@@ -90,3 +91,6 @@ Check out the [Feature Request Template](.github/ISSUE_TEMPLATE/feature_request.
 # License
 
 Check out the [MIT](LICENSE) License 
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fastaqc%2Fgitfun.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fastaqc%2Fgitfun?ref=badge_large)
