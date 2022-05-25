@@ -31,7 +31,7 @@ setup(
     'pycparser==2.20',
     'PyGithub==1.55',
     'Pygments==2.8.1',
-    'PyJWT==2.1.0',
+    'PyJWT==2.4.0',
     'PyNaCl==1.4.0',
     'pyparsing==2.4.7',
     'readme-renderer==29.0',
